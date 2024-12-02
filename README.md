@@ -1,9 +1,8 @@
 <div align="center">
 
 # DELT: A Simple Diversity-driven EarlyLate Training for Dataset Distillation
-<!--
-[arXiv] &emsp; [[Distilled Dataset](https://drive.google.com/file/d/1Rr_ik94FNte75yc4GiKtv927qdBwKskr/view?usp=sharing)]
--->
+[[arXiv](https://arxiv.org/abs/2411.19946)] &emsp; [[Distilled Dataset](https://drive.google.com/file/d/1Rr_ik94FNte75yc4GiKtv927qdBwKskr/view?usp=sharing)]
+
 
 </div>
 
@@ -24,6 +23,7 @@ Official Pytorch implementation to DELT which outperforms SOTA top 1-acc by +1.3
     - [♻️ Recover](#️-recover)
     - [🧪 Evaluation](#-evaluation)
 - [📈 Results](#-results)
+- [📜 Citation](#-citation)
 # Abstract
 
 Recent advances in dataset distillation have led to solutions in two main directions. The conventional *batch-to-batch* matching mechanism is ideal for small-scale datasets and includes bi-level optimization methods on models and syntheses, such as FRePo, RCIG, and RaT-BPTT, as well as other methods like distribution matching, gradient matching, and weight trajectory matching. Conversely, *batch-to-global* matching typifies decoupled methods, which are particularly advantageous for large-scale datasets. This approach has garnered substantial interest within the community, as seen in SRe$^2$L, G-VBSM, WMDD, and CDA. A primary challenge with the second approach is the lack of diversity among syntheses within each class since samples are optimized independently and the same global supervision signals are reused across different synthetic images. In this study, we propose a new **D**iversity-driven **E**`arly`**L**`ate` **T**raining (DELT) scheme to enhance the diversity of images in batch-to-global matching with less computation. Our approach is conceptually simple yet effective, it partitions predefined IPC samples into smaller subtasks and employs local optimizations to distill each subset into distributions from distinct phases, reducing the uniformity induced by the unified optimization process. These distilled images from the subtasks demonstrate effective generalization when applied to the entire task. We conduct extensive experiments on CIFAR, Tiny-ImageNet, ImageNet-1K, and its sub-datasets. Our approach outperforms the previous state-of-the-art by **1.3%** on average across different datasets and IPCs (images per class), increasing diversity per class by more than **5%** while reducing synthesis time by up to **39.3%**, enhancing the overall efficiency.
@@ -99,3 +99,15 @@ We also visualize the inter-class average cosine similarity as an indication for
 <div align=center>
 <img width=70% src="./imgs/diversity_comparison.png"/>
 </div>
+
+# 📜 Citation
+
+```
+@misc{shen2024deltsimplediversitydrivenearlylate,
+      title={DELT: A Simple Diversity-driven EarlyLate Training for Dataset Distillation}, 
+      author={Zhiqiang Shen and Ammar Sherif and Zeyuan Yin and Shitong Shao},
+      year={2024},
+      eprint={2411.19946},
+      archivePrefix={arXiv},
+}
+```
