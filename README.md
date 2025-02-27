@@ -1,6 +1,6 @@
 <div align="center">
 
-# DELT: A Simple Diversity-driven EarlyLate Training for Dataset Distillation
+# DELT: A Simple Diversity-driven EarlyLate Training for Dataset Distillation (CVPR 2025)
 [[arXiv](https://arxiv.org/abs/2411.19946)] &emsp; [[Distilled Dataset](https://drive.google.com/file/d/1Rr_ik94FNte75yc4GiKtv927qdBwKskr/view?usp=sharing)]
 
 
