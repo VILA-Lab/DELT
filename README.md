@@ -103,11 +103,10 @@ We also visualize the inter-class average cosine similarity as an indication for
 # 📜 Citation
 
 ```
-@misc{shen2024deltsimplediversitydrivenearlylate,
-      title={DELT: A Simple Diversity-driven EarlyLate Training for Dataset Distillation}, 
-      author={Zhiqiang Shen and Ammar Sherif and Zeyuan Yin and Shitong Shao},
-      year={2024},
-      eprint={2411.19946},
-      archivePrefix={arXiv},
+@inproceedings{shen2025delt,
+  title={Delt: A simple diversity-driven earlylate training for dataset distillation},
+  author={Shen, Zhiqiang and Sherif, Ammar and Yin, Zeyuan and Shao, Shitong},
+  booktitle={Proceedings of the Computer Vision and Pattern Recognition Conference},
+  year={2025}
 }
 ```
